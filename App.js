@@ -8,7 +8,7 @@ export default function App() {
     <PaperProvider>
     <View>
       <Appbar />
-      <Text>Welcome to MyMenu!</Text>
+      <Text>Welcome to MyMenu!!!</Text>
       <StatusBar style="auto" />
     </View>
     </PaperProvider>
