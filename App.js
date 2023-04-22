@@ -9,7 +9,7 @@ export default function App() {
     <View>
       <Appbar />
       <Text>Welcome to MyMenu!!!</Text>
-      <Button.region />
+      <Buttonregion />
       <StatusBar style="auto" />
     </View>
     </PaperProvider>
