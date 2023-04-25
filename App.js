@@ -1,17 +1,18 @@
+import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import { Provider as PaperProvider } from 'react-native-paper'
-import {Appbar} from './components'
+import { Provider as PaperProvider } from 'react-native-paper';
+import { Appbar, Buttonregion } from './components';
 
 export default function App() {
   return (
     <PaperProvider>
-    <View>
-      <Appbar />
-      <Text>Welcome to MyMenu!!!</Text>
-      <Buttonregion />
-      <StatusBar style="auto" />
-    </View>
+      <View>
+        <Appbar />
+        <Text>Welcome to MyMenu!!!</Text>
+        <Buttonregion />
+        <StatusBar style="auto" />
+      </View>
     </PaperProvider>
   );
 }
