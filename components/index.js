@@ -1,3 +1,4 @@
-import Appbar from './Appbar'
+import Appbar from './Appbar';
+import Buttonregion from './Buttonregion';
 
-export { Appbar }
+export { Appbar, Buttonregion };
