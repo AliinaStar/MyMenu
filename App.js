@@ -12,6 +12,7 @@ export default function App() {
         <Text>Welcome to MyMenu!!!</Text>
         <Buttonregion />
         <StatusBar style="auto" />
+        <Searchbar />
       </View>
     </PaperProvider>
   );
