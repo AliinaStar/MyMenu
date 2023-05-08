@@ -2,7 +2,7 @@ import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, ScrollView } from 'react-native';
 import { Provider as PaperProvider } from 'react-native-paper';
-import { Appbar, Buttonregion } from './components';
+import { Appbar, Buttonregion, Сard1 } from './components';
 
 export default function App() {
   return (
@@ -11,6 +11,8 @@ export default function App() {
         <Appbar />
         <Text>Welcome to MyMenu!!!</Text>
         <Buttonregion />
+        <Сard1 />
+        <Card2 />
         <StatusBar style="auto" />
       </ScrollView>
     </PaperProvider>
