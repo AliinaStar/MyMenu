@@ -34,7 +34,7 @@ Install the [Expo Go](https://expo.dev/client) app on your iOS or Android phone 
 
 ## Git Flow
 
-1. Before starting work on a new feature, go to the ***master*** branch and download the latest changes:
+1. Before starting work on a new feature, go to the **_master_** branch and download the latest changes:
 
 ```bash
 git checkout master
@@ -79,6 +79,12 @@ fix conflicts, then add changes:
 git add .
 git commit -m 'fix merge conflicts'
 git push
+```
+use lint and format code:
+
+```bash
+git run lint
+git run format
 ```
 
 ## Overviews
