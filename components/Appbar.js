@@ -1,13 +1,13 @@
 import * as React from 'react';
-import { Appbar } from 'react-native-paper';
+import { Appbar as PaperAppbar } from 'react-native-paper';
 
-const AppbarComponent = () => (
-  <Appbar.Header>
-    <Appbar.BackAction onPress={() => {}} />
-    <Appbar.Content title="MyMenu" />
-    <Appbar.Action icon="calendar" onPress={() => {}} />
-    <Appbar.Action icon="magnify" onPress={() => {}} />
-  </Appbar.Header>
+const Appbar = () => (
+  <PaperAppbar.Header>
+    <PaperAppbar.BackAction onPress={() => {}} />
+    <PaperAppbar.Content title="MyMenu" />
+    <PaperAppbar.Action icon="calendar" onPress={() => {}} />
+    <PaperAppbar.Action icon="magnify" onPress={() => {}} />
+  </PaperAppbar.Header>
 );
 
-export default AppbarComponent;
+export default Appbar;
