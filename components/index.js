@@ -1,6 +1,6 @@
-import Appbar from './Appbar';
 import Buttonregion from './Buttonregion';
-import Card from './Card';
-import Searchbar from './searchbar';
+import DishCard from './DishCard';
+import RestCard from './RestCard';
+import Searchbar from './Searchbar';
 
-export { Appbar, Buttonregion, Searchbar, Card };
+export { Buttonregion, Searchbar, DishCard, RestCard };
