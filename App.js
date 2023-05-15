@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, ScrollView } from 'react-native';
-import { Provider as PaperProvider } from 'react-native-paper';
-import { Appbar, Buttonregion, Сard } from './components';
+import { Provider as PaperProvider, Searchbar } from 'react-native-paper';
+import { Appbar, Buttonregion, Сard, Searchbar, BottomNavigation, CardFood } from './components';
 
 const cards = [
   { id: 'id1', title: 'card1', subtitle: 'sub1', content: 'content1' },
@@ -10,14 +10,17 @@ const cards = [
   { id: 'id3', title: 'card1', subtitle: 'sub1', content: 'content1' },
   { id: 'id4', title: 'card1', subtitle: 'sub1', content: 'content1' },
 ]
-import { StyleSheet, Text, View } from 'react-native';
-import { Provider as PaperProvider, Searchbar } from 'react-native-paper';
-import { Appbar, Buttonregion, Searchbar } from './components';
-import { Provider as PaperProvider } from 'react-native-paper';
-import { Appbar, Buttonregion, BottomNavigation } from './components';
+
+const fcards = [
+  { id: 'id1', title: 'card1', subtitle: 'sub1', content: 'content1' },
+  { id: 'id2', title: 'card1', subtitle: 'sub1', content: 'content1' },
+  { id: 'id3', title: 'card1', subtitle: 'sub1', content: 'content1' },
+  { id: 'id4', title: 'card1', subtitle: 'sub1', content: 'content1' },
+]
 
 export default function App() {
   const mapCards = cards.map((card) => <Сard key={card.id} title={card.title} content={card.content} subtitle={card.subtitle} />)
+  const mapfoodCards = fcards.map((CardFood) => <CardFood key={CardFood.id} title={FoodCard.title} content={FoodCard.content} subtitle={FoodCard.subtitle} />)
   return (
     <PaperProvider>
       <ScrollView>
