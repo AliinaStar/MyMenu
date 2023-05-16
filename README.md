@@ -80,6 +80,7 @@ git add .
 git commit -m 'fix merge conflicts'
 git push
 ```
+
 use lint and format code:
 
 ```bash
