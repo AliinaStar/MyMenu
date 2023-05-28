@@ -13,7 +13,7 @@ export default function Contacts() {
   return (
     <View style={styles}>
       <Link to={{ screen: 'Home' }}>
-        <Text variant="headlineLarge">Contacts</Text>
+        <Text variant="headlineLarge">Профіль</Text>
       </Link>
     </View>
   );
