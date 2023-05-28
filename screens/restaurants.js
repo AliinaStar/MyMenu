@@ -6,7 +6,7 @@ import { restaurants } from '../helpers/constants';
 
 export default function RestaurantsScreen() {
   const mapCards = restaurants.map((card) => (
-    <RestCard key={card.id} title={'Restaurant card ' + card.title} content={card.content} subtitle={card.subtitle} />
+    <RestCard key={card.id} title={card.title} content={card.content} subtitle={card.subtitle} />
   ));
 
   return <ScrollView>{mapCards}</ScrollView>;

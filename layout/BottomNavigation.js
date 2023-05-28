@@ -5,15 +5,15 @@ import { Home, Dishes, Restaurants, Contacts } from '../screens';
 const MyComponent = () => {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
-    { key: 'home', title: 'Home', focusedIcon: 'home', unfocusedIcon: 'home-outline' },
-    { key: 'dishes', title: 'Dishes', focusedIcon: 'food', unfocusedIcon: 'food-outline' },
+    { key: 'home', title: 'Головна', focusedIcon: 'home', unfocusedIcon: 'home-outline' },
+    { key: 'dishes', title: 'Страви', focusedIcon: 'food', unfocusedIcon: 'food-outline' },
     {
       key: 'restaurants',
-      title: 'Restaurants',
+      title: 'Ресторани',
       focusedIcon: 'food-takeout-box',
       unfocusedIcon: 'food-takeout-box-outline',
     },
-    { key: 'contacts', title: 'Contacts', focusedIcon: 'email', unfocusedIcon: 'email-outline' },
+    { key: 'contacts', title: 'Профіль', focusedIcon: 'account', unfocusedIcon: 'account-outline' },
   ]);
 
   const renderScene = BottomNavigation.SceneMap({
