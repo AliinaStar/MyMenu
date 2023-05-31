@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { PropTypes } from 'prop-types';
-import { Text } from 'react-native-paper';
+import { List, Text } from 'react-native-paper';
 
 const styles = StyleSheet.create({
   display: 'flex',
@@ -9,9 +9,17 @@ const styles = StyleSheet.create({
 });
 
 export default function Dish({ route }) {
+  const recipe = route.params.dish.recipe
+
+  const recipeMap = recipe.map((ing) => (
+    <List.Item key={ing.name} title={ing.name} description={ing.url} />
+  ));
+
   return (
-    <View style={styles}>
-      <Text variant="headlineLarge">{route.params.title}</Text>
+    <View>
+      <Text variant="titleLarge">{route.params.title}</Text>
+      <Text variant="titleMedium">   Інгредієнти:</Text>
+      <List.Section>{recipeMap}</List.Section>
     </View>
   );
 }
