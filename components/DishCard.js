@@ -13,7 +13,7 @@ const DishCard = ({ dish }) => {
         <PaperCard.Content>
           <Text variant="titleLarge">{dish.title}</Text>
         </PaperCard.Content>
-        <PaperCard.Cover source={{ uri: dish.url ? dish.url : 'https://picsum.photos/700' }} />
+        <PaperCard.Cover source={{ uri: dish.url }} />
       </PaperCard>
     </TouchableOpacity>
   );
