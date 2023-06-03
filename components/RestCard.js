@@ -4,17 +4,18 @@ import { useNavigation } from '@react-navigation/native';
 import { Avatar, Card as PaperCard, Text } from 'react-native-paper';
 import { PropTypes } from 'prop-types';
 
-const RestCard = ({ title, content, url, subtitle }) => {
+
+const RestCard = ({ restaurant }) => {
   const navigation = useNavigation();
 
   return (
-    <TouchableOpacity onPress={() => navigation.navigate('Restaurant', { title: title })}>
+    <TouchableOpacity onPress={() => navigation.navigate('Restaurant', { restaurant: restaurant })}>
       <PaperCard>
         <PaperCard.Content>
-          <Text variant="titleLarge">{title}</Text>
-          <Text variant="bodyLarge">{content}</Text>
+          <Text variant="titleLarge">{restaurant.title}</Text>
+          <Text variant="bodyLarge">{restaurant.content}</Text>
         </PaperCard.Content>
-        <PaperCard.Cover source={{ uri: url ? url : 'https://picsum.photos/700' }} />
+        <PaperCard.Cover source={{ uri: restaurant.url }} />
       </PaperCard>
     </TouchableOpacity>
   );

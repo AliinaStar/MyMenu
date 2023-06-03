@@ -6,7 +6,7 @@ import { dishes } from '../helpers/constants';
 
 export default function DishesScreen() {
   const mapCards = dishes.map((card) => (
-    <DishCard key={card.id} title={card.title} content={card.content} subtitle={card.subtitle} />
+    <DishCard key={card.id} dish={card} />
   ));
 
   return <ScrollView>{mapCards}</ScrollView>;
