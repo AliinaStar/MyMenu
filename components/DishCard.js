@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { Card as PaperCard, Text } from 'react-native-paper';
 import { PropTypes } from 'prop-types';
 
+
 const DishCard = ({ dish }) => {
   const navigation = useNavigation();
 

@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { Avatar, Card as PaperCard, Text } from 'react-native-paper';
 import { PropTypes } from 'prop-types';
 
+
 const RestCard = ({ restaurant }) => {
   const navigation = useNavigation();
 
