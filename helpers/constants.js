@@ -47,4 +47,5 @@ export const restaurants = [
   { id: 'id2', title: 'Млинці на молоці', content: 'Найсмачніші млинці у Львові', url: 'https://lviv.virtual.ua/images/510680/' },
   { id: 'id3', title: 'Ресторація Бачевських', content: 'Галицька кухня', url: 'https://ua.igotoworld.com/frontend/webcontent/websites/1/images/gallery/1030999_370x246_photo_Kulyk_0703_.jpg' },
   { id: 'id4', title: 'Криївка', content: 'Ресторан української кухні', url: 'https://www.tsina.lviv.ua/wp-content/uploads/2016/12/kriyivka-1.jpg' },
+]
 
